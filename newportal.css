@@ -1,0 +1,130 @@
+body{
+margin:2%;
+}
+header{
+
+	background-image:url("http://intro-webdesign.com/CSS/assignment-2/images/flywheel.jpg");
+	height:250px;
+}
+h1{
+text-align:center;
+font-famity:cursive,"Times New Roman";
+color:white;
+padding:1%;
+}
+
+h2{
+text-align:center;
+font-famity:"Times New Roman";
+color:white;
+background-color:rgba(192,192,192,0.6);
+}
+
+header a{
+	background-color:rgba(192,192,192,0.4);
+	margin:5%;
+	padding:9px 29px 9px 29px;
+	border:solid 1px #b3b3b3;
+	font-size:125%;
+	color:#000000;
+	text-decoration:none;
+	border-radius:8px;
+	
+}
+a:hover{
+	background-color:#ffffff;
+}
+nav{
+	display:block;
+}
+details{
+	float:left;
+}
+.dropbtn{
+	color:white;
+	background:linear-gradient(green 0%,black 100%);
+	cursor:pointer;
+	
+	
+}
+
+
+.dropdown{
+	position:relative;
+	display:inline-block;
+}
+.dropdown-content{
+	display:none;
+	position:absolute;
+	background:#f9f9f9;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+	z-index:1;
+	min-width:160px;
+}
+.dropdown-content a {
+
+	color:black;
+	text-decoration:none;
+	display:block;
+}
+	
+
+.dropdown:hover .dropdown-content{
+	display:block;
+}
+section{
+display:inline-block;
+
+}
+#one{
+	border:1px dotted white;
+	padding-right:100%;
+
+	padding-left:10%;
+	height:200%;
+}
+#two{
+	border:1px dotted white;
+	padding-right:100%;
+	padding-left:10%;
+}
+#three{
+	border:1px dotted white;
+	padding-right:100%;
+padding-left:10%;
+}
+.full{
+background:black;
+}
+figure{
+margin:0px;
+display:inline-block;
+
+
+}
+img{
+display:inline-block;
+
+width:80%;
+
+}
+figcaption{
+width:80%;
+border:1px dashed black;
+background:yellow;
+border-radius:10%;
+}
+
+.left{
+float:left;
+width:30%;
+display:inline-block;
+}
+.right{
+font-size:125%;
+display:inline-block;
+width:60%;}
+
+
+
+
