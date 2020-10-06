@@ -5,57 +5,82 @@
 	<title>praveen</title>
 	<link href="newportal.css" rel="stylesheet">
 	<style>
-		body{
-margin:2%;
-}
+		*{
+			margin: 0;padding: 0;box-sizing: border-box;
+		}
 header{
-
+	position: relative;
 	background-image:url("http://intro-webdesign.com/CSS/assignment-2/images/flywheel.jpg");
-	height:250px;
+	background-size: cover;
+	background-position:center;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	gap: 25px;
 }
-h1{
-text-align:center;
-font-famity:cursive,"Times New Roman";
-color:white;
-padding:1%;
+header h1,header h2{
+	color: #fff;
+}
+header h1{
+	font-size: 50px;
+}
+header h2{
+	background:  #d1165e;
+	width: 100%;
+	text-align: center;
+	line-height: 50px;
+	height: 50px;
 }
 
-h2{
-text-align:center;
-font-famity:"Times New Roman";
-color:white;
-background-color:rgba(192,192,192,0.6);
-}
-
-header a{
-	background-color:rgba(192,192,192,0.4);
-	margin:5%;
-	padding:0.2% 0.5% 0.2% 0.5%;
-	border:solid 1px #b3b3b3;
-	font-size:125%;
-	color:#000000;
-	text-decoration:none;
-	border-radius:8%;
-	
-}
-a:hover{
-	background-color:rgba(0,255,0,0.3);
-}
 nav{
-	display:block;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #d1165e;
+	height: 50px;
 }
-details{
-	float:left;
+ul{
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	list-style-type: none;
 }
+li{
+	padding: 0 50px;
+}
+header ul li a{
+	padding: 0 15px;
+	padding: 15px 25px;
+	text-decoration: none;
+	font-size: 20px;
+	transition: 0.5s ease;
+	font-weight: bold;
+	color: #fff;
+}
+.contact{
+	padding: 15px 50px;
+	cursor: pointer;
+	border-radius: 15px;
+	border: 0;
+	font-weight: bold;
+	background: #d1165e;
+	color: #f9f9f9;
+	text-transform: uppercase;
+	letter-spacing: 5px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 .dropbtn{
 	color:white;
-	background:linear-gradient(green 0%,black 100%);
+	background:linear-gradient(#d1165e ,black);
 	cursor:pointer;
-	
-	
+	width: 155px;
 }
-
-
 .dropdown{
 	position:relative;
 	display:inline-block;
@@ -69,12 +94,15 @@ details{
 	min-width:160px;
 }
 .dropdown-content a {
-
-	color:black;
+	color:#fff;
+	padding: 15px;
 	text-decoration:none;
 	display:block;
+	background: #d1165e;
 }
-	
+	.dropdown-content a:hover{
+		background:#d1165e81;
+	}
 
 .dropdown:hover .dropdown-content{
 	display:block;
@@ -86,7 +114,6 @@ display:inline-block;
 #one{
 	border:1px dotted white;
 	padding-right:100%;
-
 	padding-left:10%;
 	height:200%;
 }
@@ -116,21 +143,49 @@ width:80%;
 
 }
 figcaption{
-width:80%;
-border:1px dashed black;
-background:yellow;
-border-radius:10%;
+	width: 80%;
+	text-transform: uppercase;
+	margin: 15px;
+padding: 5px 10px;
+border:3px solid #420000;
+background:#d1165e;
+text-align: center;
+color: #fff;
+font-weight: bold;
 }
 
+.section{
+	display: flex;
+	justify-content: center;
+}
 .left{
-float:left;
-width:30%;
-display:inline-block;
+	margin: 10px;
+}
+.left img{
+	width: 100%;
 }
 .right{
-font-size:125%;
-display:inline-block;
-width:60%;}
+	margin-top: 50px;
+	gap: 25px;
+	flex-wrap: wrap;
+	display: flex;
+	flex-direction: column;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	text-align: justify;
+	padding: 15px;
+}
+.right a{
+	padding: 15px 50px;
+	border-radius: 15px;
+	border: 0;
+	font-weight: bold;
+	background: #d1165e;
+	color: #f9f9f9;
+	text-transform: uppercase;
+	letter-spacing: 5px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	text-decoration: none;
+	width: 250px;
+}
 	</style>
 </head>
 <body>
@@ -138,14 +193,15 @@ width:60%;}
 <h1><b>A.D.S public school</b></h1>
 <h2>(A modern english medium school for new generation)</h2>
 
-<nav><a href="http://adspublicschool.com/">Home</a>
-	<a href="https://www.facebook.com/adspublicschool/">facebook</a>
-	<a href="https://www.linkedin.com/school/ads-public-school/">Linkedin</a>
-	<a href="https://www.facebook.com/pg/adspublicschool/photos/?ref=page_internal">Gallary</a>
-	
+<nav>
+	<ul>
+		<li><a href="http://adspublicschool.com/">Home</a></li>
+		<li><a href="https://www.facebook.com/adspublicschool/">facebook</a></li>
+		<li><a href="https://www.linkedin.com/school/ads-public-school/">Linkedin</a></li>
+		<li><a href="https://www.facebook.com/pg/adspublicschool/photos/?ref=page_internal">Gallary</a></li>
+	</ul>
 </nav>
-<p></p>
-<button><details><summary>contact info</summary>phone:09479422951</br>email:rahul.adsps@gmail.com</details></button>
+<button class="contact"><details><summary>contact info</summary>phone:09479422951</br>email:rahul.adsps@gmail.com</details></button>
 
 </header>
 <div class="full">
@@ -182,23 +238,24 @@ width:60%;}
 			<a href="https://www.facebook.com/profile.php?id=100031061075783">Manisha mam</a>
 		</div>
 </div></div>
-<aside class="left"><figure>
-	
-	<img src="dssir.jpg" alt=" ">
-<figcaption>director</figcaption>
-</figure></aside>
-<div class="right">
-</br>
-</br>
-Education is an essential part of our lives. We are nothing without knowledge, and education is what separates us from others. The main step to acquire education is enrolling oneself in a school. School serves as the first learning place for most of the people. Similarly, it is the first spark in receiving an education. My school is my second home where I spend most of my time. Above all, it gives me a platform to do better in life and also builds my personality. I feel blessed to study in one of the most prestigious and esteemed schools of the city. In addition, my school has a lot of assets which makes me feel fortunate to be a part of it. In this essay on my school, I will tell you why I love my school and what my school has taught me.
-</br>
-If someone asked me what I have learned from my school, I won’t be able to answer it in one sentence. For the lessons are irreplaceable and I can never be thankful enough for them. I learned to share because of my school. The power of sharing and sympathy was taught to me by my school. I learned how to be considerate towards animals and it also one of the main reasons why I adopted a pet.
-</br>
-</br>
-<strong>-DR. D.S SINGH</strong>
+<div class="section">
+	<aside class="left">
+		<figcaption>director</figcaption>
+		<figure>
+		<img src="./dssir.jpeg">
+	</figure></aside>
+	<div class="right">
+	</br>
+	</br>
+	Education is an essential part of our lives. We are nothing without knowledge, and education is what separates us from others. The main step to acquire education is enrolling oneself in a school. School serves as the first learning place for most of the people. Similarly, it is the first spark in receiving an education. My school is my second home where I spend most of my time. Above all, it gives me a platform to do better in life and also builds my personality. I feel blessed to study in one of the most prestigious and esteemed schools of the city. In addition, my school has a lot of assets which makes me feel fortunate to be a part of it. In this essay on my school, I will tell you why I love my school and what my school has taught me.
+	</br>
+	If someone asked me what I have learned from my school, I won’t be able to answer it in one sentence. For the lessons are irreplaceable and I can never be thankful enough for them. I learned to share because of my school. The power of sharing and sympathy was taught to me by my school. I learned how to be considerate towards animals and it also one of the main reasons why I adopted a pet.
+	</br>
+	</br>
+	<strong>-DR. D.S SINGH</strong><br>
+	<a href="mailto:rahul.adsps@gmail.com">send mail</a>
+	</div>
 </div>
-</br>
-<a href="mailto:rahul.adsps@gmail.com">send mail</a>
 </body>
 </html>
 
